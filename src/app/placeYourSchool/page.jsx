@@ -32,7 +32,7 @@ const Formpage = () => {
     }
     return (
 
-        <div className='max-w-[100%] flex justify-center items-center p-5 '>
+        <div className='max-w-[1200px] flex justify-center items-center p-5 mx-auto'>
             <div className='border p-5 max-w-[100%]  '>
                 <div className='w-2xl   flex justify-between flex-col sm:flex-row'>
                     <div className='font-medium'> <input type='radio' className='mr-2' name='schoolForm' value='school' onClick={(e) => { handleOnClick(e) }} id='school'  defaultChecked/><label htmlFor='school'>School</label></div>

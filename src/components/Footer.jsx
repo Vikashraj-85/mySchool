@@ -8,7 +8,7 @@ import XIcon from '@mui/icons-material/X';
 
 const Footer = () => {
     return (
-        <footer className='md:px-20 px-5 bg-gray-800 py-5' >
+        <footer className='md:px-20 px-5 bg-gray-800 py-5 mt-10' >
             <div className='grid md:grid-cols-2'>
                 <div>
                     <Link href={'/'}>
