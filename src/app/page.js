@@ -6,7 +6,9 @@ const page = () => {
   return (
     <div>
       <Carousel/>
-      <SchoolCard/>
+      <SchoolCard Title={'Play School'}/>
+      <SchoolCard Title={'Inter Colleges'}/>
+      <SchoolCard Title={'Degree Colleges'}/>
     </div>
   )
 }

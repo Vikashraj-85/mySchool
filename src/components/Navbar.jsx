@@ -11,7 +11,7 @@ const navigation = [
   { name: 'About', href: '/about', current: true },
   { name: 'List', href: '#', current: false },
   { name: 'Type', href: '#', current: false },
-  { name: 'Place Your School', href: '#', current: false },
+  { name: 'Place Your School', href: '/placeYourSchool', current: false },
 ]
 
 function classNames(...classes) {
@@ -59,12 +59,17 @@ export default function Example() {
                     className="absolute left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                     <MenuItem>
                       <Link href="#" className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden">
-                       Lists
+                       Play School
                       </Link>
                     </MenuItem>
                     <MenuItem>
                       <Link href="#" className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden">
-                       Lists
+                       Inter Colleges
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link href="#" className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden">
+                       Degree Colleges
                       </Link>
                     </MenuItem>
                   </MenuItems>
@@ -81,7 +86,12 @@ export default function Example() {
                     className="absolute left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                     <MenuItem>
                       <Link href="#" className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden">
-                        Types
+                        Government
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link href="#" className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden">
+                        Private
                       </Link>
                     </MenuItem>
                   </MenuItems>
@@ -98,14 +108,14 @@ export default function Example() {
                     className="absolute left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                     <MenuItem>
                       <Link href="#" className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden">
-                        City
+                        Dibai
                       </Link>
                     </MenuItem>
                   </MenuItems>
                 </Menu>
                 <Menu as='div' className='text-gray-300 hover:bg-gray-700 hover:text-white
                     rounded-md px-3 py-2 text-sm font-medium cursor-pointer relative'>
-                  <Link href='/about'>Place Your School</Link>
+                  <Link href='/placeYourSchool'>Place Your School</Link>
                 </Menu>
               </div>
             </div>
@@ -145,7 +155,7 @@ export default function Example() {
                 'block rounded-md px-3 py-2 text-base font-medium',
               )}
             >
-              <Link href={'/'}>{item.name}</Link>
+              {item.name}
               
             </DisclosureButton>
           ))}

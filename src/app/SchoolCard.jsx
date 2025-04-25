@@ -4,10 +4,10 @@ import Image from 'next/image'
 import { Fullscreen } from '@mui/icons-material'
 
 
-const SchoolCard = () => {
+const SchoolCard = ({Title}) => {
     return (
         <div className=' md:px-15 px-5 '>
-            <h1 className='text-2xl font-medium py-2 my-3 md:text-left text-center border-b text-[#006afb]'>Play School </h1>
+            <h1  className='text-2xl font-medium py-2 my-3 md:text-left text-center border-b text-[#006afb]'><Link href={'/'}>{Title}</Link> </h1>
             <div className=' grid lg:grid-cols-4 sm:grid-cols-2  gap-3'>
                 <Link href={'#'}>
                     <div className='my-5 shadow-xl/30 rounded-sm p-2    '>
