@@ -6,7 +6,7 @@ const Schoolfrom = () => {
         principal:'',
         address:'',
         description:'',
-        thumnailImg:'',
+        thumbnailImg:'',
 
     })
     const handleOnChange=(e)=>{
